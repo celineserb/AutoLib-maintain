@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "322250650230",
+    "project_id": "autolibdz-5f062",
+    "storage_bucket": "autolibdz-5f062.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322250650230:android:e0a6560d3a5701d91f2557",
+        "android_client_info": {
+          "package_name": "com.clovertech.autolib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322250650230-hoo5jka8j0e4046hbp6ojd1432usjr2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvO8idXR9hx7TqM5uAhjB0fO4ND4bnqaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322250650230-hoo5jka8j0e4046hbp6ojd1432usjr2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

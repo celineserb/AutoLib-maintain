@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.clovertech.autolib.views.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/nav_to_taskdetail"
+            app:destination="@id/nav_task_detail"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.clovertech.autolib.views.ui.userProfil.UserProfileFragment"
+        android:label= "Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.clovertech.autolib.views.ui.notifications.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.clovertech.autolib.views.ui.dashboard.DashboardFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/nav_task_detail"
+        android:name="com.clovertech.autolib.views.ui.home.TaskDetailFragment"
+        android:label="Task detail"
+        tools:layout="@layout/fragment_detail_task" >
+        <action
+            android:id="@+id/nav_to_addmaterial"
+            app:destination="@id/nav_add_material"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/nav_detail_to_vehicle"
+            app:destination="@id/nav_vehicle_detail"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_material"
+        android:name="com.clovertech.autolib.views.ui.home.AddMaterialFragment"
+        android:label="Add a material"
+        tools:layout="@layout/fragment_add_material" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.clovertech.autolib.views.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/nav_to_themes"
+            app:destination="@id/nav_themes" />
+    </fragment>
+    <dialog
+        android:id="@+id/nav_themes"
+        android:name="com.clovertech.autolib.views.ui.settings.ThemeFragment"
+        android:label="Select theme"
+        tools:layout="@layout/fragment_theme" />
+    <fragment
+        android:id="@+id/nav_panne"
+        android:name="com.clovertech.autolib.views.ui.panne.PanneAddFragment"
+        android:label="Report a panne"
+        tools:layout="@layout/fragment_add_panne" />
+    <fragment
+        android:id="@+id/nav_vehicle_detail"
+        android:name="com.clovertech.autolib.views.ui.vehiculedetail.VehicleFragment"
+        android:label="Vehicle details"
+        tools:layout="@layout/fragment_vehicule" >
+        <argument
+            android:name="idVehicule"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>

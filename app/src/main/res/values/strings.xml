@@ -1,13 +1,29 @@
 <resources>
     <string name="app_name">AutoLib maintain</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="home_title">Accueil</string>
+    <string name="moments_title">Notifications</string>
+    <string name="notifications_title">Tâches</string>
+    <string name="messages_title">Profil</string>
+    <string name="search_title">Recherche</string>
+    <string name="search_hint">Recherche</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_channel_id">default_channel_id</string>
+    <string name="notif_msg_default">Vous avez une nouvelle tache!</string>
+    <string name="channel_name">Notification des taches</string>
+    <string name="channel_description">Notification concernant les taches</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="close">Cloturer</string>
+    <string name="cancel">Annuler</string>
+    <string name="closeDialogTitle">Cloturation d\'une tache</string>
+    <string name="closeMessagePre">"Voulez vous cloturer la tache : "</string>
+    <string name="notif_title">Vous avez une nouvelle tache</string>
+    <string name="action_get_started">Get Started</string>
+    <string name="action_next">Next</string>
+    <string name="add_material">Add material</string>
+    <string name="quantity">Quantity</string>
+    <string name="description">Description</string>
+    <string name="material_name">Material name</string>
+
+
 </resources>
